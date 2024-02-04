@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 
 # Load the data
-file_path = 'data/participants_Spreng.xlsx'
+file_path = '../data/participants_Spreng.xlsx'
 df = pd.read_excel(file_path, engine='openpyxl')
 selected_columns=list()
 

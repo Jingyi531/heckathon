@@ -134,7 +134,7 @@ def calculateSS(thresh=0.05, show_plots=False, debug=False):
         # print(f'data/clean_healthy_ts/{filename}')
 
         # Load time series data from the current file
-        data = np.loadtxt(f'data/clean_healthy_ts/{filename}', delimiter=',')
+        data = np.loadtxt(f'../data/clean_healthy_ts/{filename}', delimiter=',')
 
         if debug:
             print(' + data.shape:', data.shape, data[0][:5])
@@ -163,7 +163,7 @@ def calculateSS(thresh=0.05, show_plots=False, debug=False):
             plotting.show()
 
         ## load network assigments for each node
-        Ci = np.loadtxt('data/network_members.csv')
+        Ci = np.loadtxt('../data/network_members.csv')
         if debug:
             print(' + Ci.shape:', Ci.shape, type(Ci))
 
